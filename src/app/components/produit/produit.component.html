@@ -1,0 +1,19 @@
+<p>produit works!</p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Libellé</th>
+            <th>Prix</th>
+            <th>Quantite</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let produit of produits">
+            <td>{{produit.nom}}</td>
+            <td>{{produit.prix|number}}fcfa</td>
+            <td>{{produit.quantite}}</td>
+        </tr>
+    </tbody>
+</table>
